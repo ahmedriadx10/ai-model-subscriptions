@@ -1,4 +1,4 @@
 # AI MODEL SUBSCRIPTIONS
 
 
-[AI MODEL](./src/assets/images/logo.png)
+![](./src/assets/images/logo.png)
