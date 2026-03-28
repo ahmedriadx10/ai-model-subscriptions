@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import ModelsManagement from "./components/models-management/ModelsManagement";
@@ -13,6 +14,7 @@ const App = () => {
   <ModelsManagement/>
 </main>
 
+<ToastContainer/>
     <Footer/>
     </>
   );

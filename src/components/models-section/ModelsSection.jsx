@@ -8,7 +8,7 @@ const ModelsSection = ({ dataPromise }) => {
 const [userCart,setUserCart]=useState([])
 
   return (
-    <section className="pb-20 border">
+    <section className="pb-20">
       <div className="flex justify-center items-center">
         <button
           className={`btn btn-ghost rounded-r-none ${models === "models" ? "bg-(--aiPrimary) text-white" : ""}`}
@@ -20,12 +20,12 @@ const [userCart,setUserCart]=useState([])
           className={`btn btn-ghost rounded-l-none ${models === "cart" ? "bg-(--aiPrimary) text-white" : ""}`}
           onClick={() => setModels("cart")}
         >
-          Cart (0){" "}
+          Cart ({userCart.length}){" "}
         </button>
       </div>
 
-      <section className="border pt-20">
-        {models === "models" ? <Models modelsData={modelsData} /> : <Cart />}
+      <section className=" pt-20">
+        {models === "models" ? <Models modelsData={modelsData} userCart={userCart} setUserCart={setUserCart} /> : <Cart userCart={userCart} setUserCart={setUserCart}/>}
       </section>
     </section>
   );

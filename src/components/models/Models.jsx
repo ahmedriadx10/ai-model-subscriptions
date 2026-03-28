@@ -1,8 +1,8 @@
 import Card from "../card/Card";
 
-const Models = ({modelsData}) => {
+const Models = ({modelsData,userCart,setUserCart}) => {
   
-  console.log(modelsData)
+
   return (
     <div>
    <div className="text-center space-y-4">
@@ -12,9 +12,9 @@ const Models = ({modelsData}) => {
    
 
 
-   <div className="mt-10 border grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+   <div className="mt-10  grid md:grid-cols-2 lg:grid-cols-3 gap-5">
    
-{modelsData.map(data=><Card key={data.id} cardData={data}/>)}
+{modelsData.map(data=><Card key={data.id} cardData={data} userCart={userCart} setUserCart={setUserCart}/>)}
 
 
    </div>

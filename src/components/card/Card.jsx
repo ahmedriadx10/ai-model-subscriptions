@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 
 function statusShow(data){
@@ -14,14 +15,27 @@ return <span className="badge bg-[#ff9900] uppercase text-white border-0 h-8 rou
 }
 
 
-const Card = ({cardData}) => {
+const Card = ({cardData,userCart,setUserCart}) => {
  
 
 
   const {id,title,description,price,image,status}=cardData
 
+  const findCartData=userCart.find((x)=>x.id===id)
+
+
 const handleSubscribe=()=>{
+
+  if(findCartData){
+    toast.error('Item already added')
+    return
+  }
+
   setSubscribed(true)
+
+  setUserCart([...userCart,cardData])
+toast.success('Item add to cart sucessfull !')
+
 }
 
   const [subscribed,setSubscribed]=useState(false)
