@@ -7,4 +7,22 @@
 :root{
   --aiPrimary:#e8000c;
   --aiSecondary:#f73489;
+  --btnShadow:0px 0px 5px #e8000c;
 }
+
+#heroBtn{
+  background-color: var(--aiPrimary);
+  color: white;
+
+}
+
+#heroBtn:hover #heroBtn-arrow{
+transform: translateX(5px) ;
+}
+
+#heroBtn-arrow{
+transition: 0.3s linear;
+}
+
+
+

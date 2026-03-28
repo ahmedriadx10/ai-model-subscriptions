@@ -1,5 +1,5 @@
 import { IoCartOutline } from 'react-icons/io5';
-import logoImage from '../assets/images/logo.png'
+import logoImage from '../../assets/images/logo.png'
 const Navbar = () => {
   return (
 
