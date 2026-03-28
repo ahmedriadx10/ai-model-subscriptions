@@ -1,4 +1,6 @@
 import { MdDelete } from "react-icons/md";
+import { toast } from "react-toastify";
+
 
 const CartCard = ({itemData,userCart,setUserCart}) => {
  
@@ -11,6 +13,8 @@ const handleCardDelete=()=>{
   const filterDeletedCart=userCart.filter((cart)=>cart.id!==id)
 
 setUserCart(filterDeletedCart)
+
+toast.warning("Item deleted from cart")
 
 }
 
@@ -27,7 +31,7 @@ setUserCart(filterDeletedCart)
 </div>
 
 <div>
-  <button className="btn btn-circle"><MdDelete style={{fontSize:"25px"}} onClick={handleCardDelete}/></button>
+  <button className="btn btn-circle" onClick={handleCardDelete}><MdDelete style={{fontSize:"25px"}} /></button>
 </div>
     </div>
   );
