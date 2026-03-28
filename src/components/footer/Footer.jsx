@@ -7,7 +7,7 @@ const Footer = () => {
 
   <div className="footer sm:footer-horizontal  text-base-200 ">
   <aside>
-<div className='flex items-center gap-5 '>   <img src={logoFoter} alt="" className='w-16 h-16'/> <h6 className='text-2xl font-bold text-gray-400'>AI MODEL</h6></div>
+<div className='flex items-center gap-5 '>   <img src={logoFoter} alt="" className='w-16 h-16 animate-pulse'/> <h6 className='text-2xl font-bold text-gray-400'>AI MODEL</h6></div>
     <p className='text-lg max-w-lg text-gray-200'>
  One subscription. Access to all frontier AI models in a single powerful platform.
     </p>
@@ -36,7 +36,7 @@ const Footer = () => {
 
 
 <div className='py-10 border-t border-gray-800 flex justify-between text-base-300'>
-  <p>© 2026 AI Hub. All rights reserved.</p> <p>Made with ❤️ for AI enthusiasts</p>
+  <p>&copy; {new Date().getFullYear()} AI Hub. All rights reserved.</p> <p>Made with ❤️ for AI enthusiasts</p>
 </div>
   </div>
 
