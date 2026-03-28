@@ -3,3 +3,8 @@
 *,*::before,*::after{
   font-family: "Figtree", sans-serif;
 }
+
+:root{
+  --aiPrimary:#e8000c;
+  --aiSecondary:#f73489;
+}
