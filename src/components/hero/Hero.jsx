@@ -22,7 +22,7 @@ const Hero = () => {
         Experience the full spectrum of frontier intelligence — all the most advanced AI models, unified under a single, powerful subscription.
       </p>
       <button className="btn border-0 py-5 px-5 shadow-lg rounded-xl shadow-red-300" id='heroBtn'><span>Get Unlimited Access </span> <span className='mt-1' id='heroBtn-arrow'><FaArrowRightLong style={{fontSize:'20px',}}/> </span></button>
-      <div className='flex gap-5 text-neutral-500 py-4'>
+      <div className='flex gap-5 text-neutral-500 py-4 flex-wrap'>
         <p className='flex items-center gap-0.5'><TiTick  style={{fontSize:'20px'}}/> 50+ Frontier Models</p>
         <p className='flex items-center gap-0.5'><TiTick  style={{fontSize:'20px'}}/> No Usage Limits</p>
         <p className='flex items-center gap-0.5'><TiTick  style={{fontSize:'20px'}}/> Cancel Anytime</p>
